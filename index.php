@@ -1,5 +1,7 @@
 <?php
-	header('Counter - Type : text/html; charset=utf-8');
-	$a = 1 + 2 + 3;
-	echo $a;
+	header('Content-Type: text/html; charset=utf-8');
+	$str1 = 'Привет';
+	$str2 = 'Кирилл';
+	$str3 = '<h1>'.$str1.' '.$str2.'</h1>';
+	echo $str3; 
 ?>
