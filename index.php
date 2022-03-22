@@ -1,7 +1,5 @@
 <?php
 	header('Counter - Type : text/html; charset=utf-8');
-	$a = 10;
+	$a = 1 + 2 + 3;
 	echo $a;
-	$a = 20;
-	echo $a
 ?>
