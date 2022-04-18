@@ -1,7 +1,7 @@
 <?php
 	namespace Project;
 	
-	class Page
+	class Progect
 	{
 		
 	}

@@ -1,7 +1,7 @@
 <?php
 	namespace Core;
 	
-	class Page
+	class Core
 	{
 		
 	}
