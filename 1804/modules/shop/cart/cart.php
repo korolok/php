@@ -1,7 +1,8 @@
 <?php
-	namespace modules\shop\cart;
+	namespace Shop\cart;
 	
-	class cart {
-
+	class UserCart extends \Modules\Shop\Cart
+	{
+		
 	}
 ?>
