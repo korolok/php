@@ -4,4 +4,4 @@ RewriteBase /
 RewriteCond %{REQUEST_URI} !^/project/webroot/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .+ /i01/1904/index.php
+RewriteRule .+ /i01/0321/1904/index.php

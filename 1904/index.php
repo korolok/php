@@ -4,7 +4,7 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 'on');
 	
-	require_once $_SERVER['DOCUMENT_ROOT'] . '/i01/1904/project/config/connection.php';
+	require_once $_SERVER['DOCUMENT_ROOT'] . '/i01/0321/1904/project/config/connection.php';
 	
 	spl_autoload_register(function($class) {
 		preg_match('#(.+)\\\\(.+?)$#', $class, $match);
@@ -12,7 +12,7 @@
 		$nameSpace = str_replace('\\', DIRECTORY_SEPARATOR, strtolower($match[1]));
 		$className = $match[2];
 		
-		$path = $_SERVER['DOCUMENT_ROOT'] . '/i01/1904' . DIRECTORY_SEPARATOR . $nameSpace . DIRECTORY_SEPARATOR . $className . '.php';
+		$path = $_SERVER['DOCUMENT_ROOT'] . '/i01/0321/1904' . DIRECTORY_SEPARATOR . $nameSpace . DIRECTORY_SEPARATOR . $className . '.php';
 		
 		if (file_exists($path)) {
 			require_once $path;
@@ -27,10 +27,9 @@
 		}
 	});
 	
-	$routes = require $_SERVER['DOCUMENT_ROOT'] . '/i01/1904/project/config/routes.php';
+	$routes = require $_SERVER['DOCUMENT_ROOT'] . '/i01/0321/1904/project/config/routes.php';
 	
 	$track = ( new Router )      -> getTrack($routes, $_SERVER['REQUEST_URI']);
-	//$page  = ( new Dispatcher )  -> getPage($track);
+	$page  = ( new Dispatcher )  -> getPage($track);
 	
-	//echo (new View) -> render($page);
-print_r($track);
+	echo (new View) -> render($page);
