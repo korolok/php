@@ -16,5 +16,11 @@
 public function show($params) {
 			echo $this->users[$params['id']]['name'].' '.$this->users[$params['id']]['age'].' '.$this->users[$params['id']]['salary'];
 		}
+public function info($params) {
+if ($params['key']=='name') echo $this->users[$params['id']]['name'];
+if ($params['key']=='age') echo $this->users[$params['id']]['age'];
+if ($params['key']=='salary') echo $this->users[$params['id']]['salary'];
 	}
+}
+
 ?>

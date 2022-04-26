@@ -10,5 +10,6 @@
 		new Route('/act3/', 'test', 'act3'),
 		new Route('/num/:n1/:n2/:n3/', 'num', 'sum'),
 		new Route('/user/:id/', 'user', 'show'),
+		new Route('/user/:id/:key/', 'user', 'info'),
 	];
 	
